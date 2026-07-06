@@ -1,10 +1,12 @@
 import Hero from './sections/Hero'
 import TrustBar from './sections/TrustBar'
 import Recognition from './sections/Recognition'
+import Science from './sections/Science'
 import CanvasScrubber from './sections/CanvasScrubber'
 import LabelTransparency from './sections/LabelTransparency'
 import TrustStack from './sections/TrustStack'
 import HowItWorks from './sections/HowItWorks'
+import Benefits from './sections/Benefits'
 import Comparison from './sections/Comparison'
 import Testimonials from './sections/Testimonials'
 import Offer from './sections/Offer'
@@ -18,10 +20,12 @@ export default function App() {
       <Hero />
       <TrustBar />
       <Recognition />
+      <Science />
       <CanvasScrubber />
       <LabelTransparency />
       <TrustStack />
       <HowItWorks />
+      <Benefits />
       <Comparison />
       <Testimonials />
       <Offer />
