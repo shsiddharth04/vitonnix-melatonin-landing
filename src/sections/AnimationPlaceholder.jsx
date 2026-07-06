@@ -38,7 +38,7 @@ export default function AnimationPlaceholder() {
           {/* Callout previews */}
           <div className="flex flex-wrap justify-center gap-3 mt-2">
             {[
-              '0.3ml precision dose — no measuring, no guessing',
+              '0.2ml precision dose — no measuring, no guessing',
               'Doctor-formulated in the UK',
               'Absorbs before you\'d finish reading this sentence',
             ].map((text) => (

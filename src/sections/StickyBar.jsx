@@ -29,7 +29,7 @@ export default function StickyBar() {
             Vitonnix Melatonin Spray
           </span>
           <span className="text-xs" style={{ color: '#9b96c4', fontFamily: 'Inter, sans-serif' }}>
-            ₹1,299 · 40 doses · ₹32.50/night
+            ₹1,299 · 60 servings · ₹21.65/night
           </span>
         </div>
         <a

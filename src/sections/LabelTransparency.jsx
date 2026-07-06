@@ -1,6 +1,6 @@
 export default function LabelTransparency() {
   const ingredients = [
-    { name: 'Melatonin', amount: '0.3 mg per dose', note: 'Wind-down dose, not sedation dose' },
+    { name: 'Melatonin', amount: '2.00 mg per serving', note: 'Active ingredient for sleep onset support' },
     { name: 'Vitamin B6', amount: '0.5 mg', note: 'Supports melatonin synthesis' },
     { name: 'L-Theanine', amount: '50 mg', note: 'Calm without drowsiness' },
     { name: 'Lychee extract', amount: 'Natural flavour base', note: 'No added sugar' },
@@ -38,7 +38,7 @@ export default function LabelTransparency() {
               Nothing hidden. Every ingredient, in plain terms.
             </h2>
             <p className="text-base leading-relaxed" style={{ color: '#6B6B7A', fontFamily: 'Inter, sans-serif', lineHeight: '1.7' }}>
-              A 12ml bottle. 40 doses. Each dose is 0.3ml — one spray.
+              A 12ml bottle. 60 servings. Each serving is 0.2ml — one spray.
             </p>
           </div>
 
@@ -64,16 +64,12 @@ export default function LabelTransparency() {
             ))}
           </div>
 
-          <div
-            className="flex gap-3 p-4 rounded-2xl"
-            style={{ background: '#1E2140', borderRadius: '16px' }}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B9B3E8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0 mt-0.5">
-              <circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" />
-            </svg>
-            <p className="text-sm leading-relaxed" style={{ color: '#d4cff0', fontFamily: 'Inter, sans-serif', lineHeight: '1.6' }}>
-              FSSAI certified · GMP manufactured · No added sugar · Non-GMO. Full label readable on the packaging.
-            </p>
+          <div className="rounded-2xl overflow-hidden" style={{ borderRadius: '16px', background: '#F1F0FA' }}>
+            <img
+              src="/assets/Vitonnix_Melatonin_3.webp"
+              alt="Vitonnix certifications: ISO FSSC 22000 V6, No Added Sugar, GMP Certified, FSSAI Certified, Non-GMO"
+              className="w-full"
+            />
           </div>
         </div>
       </div>

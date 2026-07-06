@@ -3,7 +3,7 @@ import { useState } from 'react'
 const faqs = [
   {
     q: 'Will I feel groggy the next morning?',
-    a: 'Vitonnix is dosed specifically for wind-down, not sedation. At 0.3mg per dose — the same level studied for sleep onset support — it signals your brain that it\'s time to sleep without the heavy-headed feeling higher doses create. Most people report waking up clear.',
+    a: 'Vitonnix is dosed specifically for wind-down, not sedation. At 2mg per serving — delivered sublingually so it works faster than a tablet — it signals your brain that it\'s time to sleep without the heavy-headed feeling larger oral doses create. Most people report waking up clear.',
   },
   {
     q: 'Is this something I\'ll need forever?',

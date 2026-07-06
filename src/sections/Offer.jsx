@@ -17,10 +17,10 @@ export default function Offer() {
             className="text-3xl md:text-4xl font-semibold"
             style={{ fontFamily: 'Fraunces, Georgia, serif', color: '#FAF9F6' }}
           >
-            ₹33 a night to stop lying awake.
+            ₹22 a night to stop lying awake.
           </h2>
           <p className="text-base" style={{ color: '#9b96c4', fontFamily: 'Inter, sans-serif', lineHeight: '1.6' }}>
-            One bottle. 40 nights. That's less than a cup of chai.
+            One bottle. 60 nights. That's less than a cup of chai.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export default function Offer() {
           style={{ background: 'rgba(241,240,250,0.06)', borderRadius: '20px', border: '1px solid rgba(185,179,232,0.2)' }}
         >
           <div className="flex items-baseline justify-between">
-            <span className="text-sm" style={{ color: '#9b96c4', fontFamily: 'Inter, sans-serif' }}>Trial pack — 12ml / 40 doses</span>
+            <span className="text-sm" style={{ color: '#9b96c4', fontFamily: 'Inter, sans-serif' }}>Trial pack — 12ml / 60 servings</span>
             <div className="flex items-baseline gap-2">
               <span className="text-2xl font-semibold" style={{ color: '#FAF9F6', fontFamily: 'Inter, sans-serif' }}>₹1,299</span>
               <span className="text-sm line-through" style={{ color: '#6B6B7A', fontFamily: 'Inter, sans-serif' }}>₹1,599</span>
@@ -43,7 +43,7 @@ export default function Offer() {
 
           <div className="flex flex-col gap-2">
             {[
-              '40 nights — ₹32.50/night',
+              '60 nights — ₹21.65/night',
               'Free shipping over ₹499',
               'FSSAI certified, GMP manufactured',
             ].map((point) => (

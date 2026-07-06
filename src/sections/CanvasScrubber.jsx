@@ -5,7 +5,7 @@ const MOBILE_FRAMES = 80
 
 // Beat map: [progressStart, progressEnd, text]
 const CALLOUTS = [
-  [0.0,  0.30, '0.3ml precision dose — no measuring, no guessing'],
+  [0.0,  0.30, '0.2ml precision dose — no measuring, no guessing'],
   [0.38, 0.65, 'Doctor-formulated in the UK'],
   [0.70, 0.93, 'Absorbs before you\'d finish reading this sentence'],
 ]

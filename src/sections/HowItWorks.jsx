@@ -2,7 +2,7 @@ const steps = [
   {
     n: '01',
     heading: 'Shake and spray once under the tongue',
-    body: 'One press of the pump delivers exactly 0.3ml — the dose you need, no more.',
+    body: 'One press of the pump delivers exactly 0.2ml — the dose you need, no more.',
   },
   {
     n: '02',
