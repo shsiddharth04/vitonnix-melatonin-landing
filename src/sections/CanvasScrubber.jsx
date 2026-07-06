@@ -100,14 +100,24 @@ export default function CanvasScrubber() {
     const ctx = canvas.getContext('2d')
     const w = canvas.width / (window.devicePixelRatio || 1)
     const h = canvas.height / (window.devicePixelRatio || 1)
-    // Letterbox: preserve aspect ratio, center
     const imgAR = img.naturalWidth / img.naturalHeight
     const canvasAR = w / h
     let sw, sh, sx, sy
-    if (imgAR > canvasAR) {
-      sw = w; sh = w / imgAR; sx = 0; sy = (h - sh) / 2
+    if (window.innerWidth <= 768) {
+      // Mobile: cover — fill the full canvas, crop edges to center
+      // Landscape frame in portrait canvas → scale by height, clip left/right
+      if (imgAR > canvasAR) {
+        sh = h; sw = h * imgAR; sx = (w - sw) / 2; sy = 0
+      } else {
+        sw = w; sh = w / imgAR; sx = 0; sy = (h - sh) / 2
+      }
     } else {
-      sh = h; sw = h * imgAR; sx = (w - sw) / 2; sy = 0
+      // Desktop: contain — letterbox, preserve full image
+      if (imgAR > canvasAR) {
+        sw = w; sh = w / imgAR; sx = 0; sy = (h - sh) / 2
+      } else {
+        sh = h; sw = h * imgAR; sx = (w - sw) / 2; sy = 0
+      }
     }
     ctx.clearRect(0, 0, w, h)
     ctx.drawImage(img, sx, sy, sw, sh)
