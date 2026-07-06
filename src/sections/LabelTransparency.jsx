@@ -1,0 +1,82 @@
+export default function LabelTransparency() {
+  const ingredients = [
+    { name: 'Melatonin', amount: '0.3 mg per dose', note: 'Wind-down dose, not sedation dose' },
+    { name: 'Vitamin B6', amount: '0.5 mg', note: 'Supports melatonin synthesis' },
+    { name: 'L-Theanine', amount: '50 mg', note: 'Calm without drowsiness' },
+    { name: 'Lychee extract', amount: 'Natural flavour base', note: 'No added sugar' },
+  ]
+
+  return (
+    <section
+      className="py-20 md:py-28 px-6"
+      style={{ background: '#FAF9F6' }}
+    >
+      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+        {/* Product image */}
+        <div className="rounded-2xl overflow-hidden sticky top-8" style={{ borderRadius: '20px' }}>
+          <img
+            src="/assets/mela.webp"
+            alt="Vitonnix Melatonin — product and packaging showing full label"
+            className="w-full object-contain"
+            style={{ background: '#F1F0FA' }}
+          />
+        </div>
+
+        {/* Ingredient breakdown */}
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-3">
+            <span
+              className="inline-block self-start text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full"
+              style={{ background: '#F1F0FA', color: '#6B6B7A' }}
+            >
+              What's inside
+            </span>
+            <h2
+              className="text-3xl md:text-4xl font-semibold leading-snug"
+              style={{ fontFamily: 'Fraunces, Georgia, serif', color: '#1E2140' }}
+            >
+              Nothing hidden. Every ingredient, in plain terms.
+            </h2>
+            <p className="text-base leading-relaxed" style={{ color: '#6B6B7A', fontFamily: 'Inter, sans-serif', lineHeight: '1.7' }}>
+              A 12ml bottle. 40 doses. Each dose is 0.3ml — one spray.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            {ingredients.map((ing) => (
+              <div
+                key={ing.name}
+                className="flex flex-col gap-1 p-4 rounded-2xl"
+                style={{ background: '#F1F0FA', borderRadius: '16px' }}
+              >
+                <div className="flex items-baseline justify-between gap-4">
+                  <span className="font-semibold text-sm" style={{ color: '#1E2140', fontFamily: 'Inter, sans-serif' }}>
+                    {ing.name}
+                  </span>
+                  <span className="text-sm font-medium" style={{ color: '#E8A94C', fontFamily: 'Inter, sans-serif', whiteSpace: 'nowrap' }}>
+                    {ing.amount}
+                  </span>
+                </div>
+                <span className="text-xs" style={{ color: '#6B6B7A', fontFamily: 'Inter, sans-serif' }}>
+                  {ing.note}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <div
+            className="flex gap-3 p-4 rounded-2xl"
+            style={{ background: '#1E2140', borderRadius: '16px' }}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B9B3E8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0 mt-0.5">
+              <circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" />
+            </svg>
+            <p className="text-sm leading-relaxed" style={{ color: '#d4cff0', fontFamily: 'Inter, sans-serif', lineHeight: '1.6' }}>
+              FSSAI certified · GMP manufactured · No added sugar · Non-GMO. Full label readable on the packaging.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
