@@ -38,13 +38,17 @@ export default function Testimonials() {
   return (
     <section
       className="py-20 md:py-28 px-6"
-      style={{ background: '#FAF9F6' }}
+      style={{
+        background: '#F1F0FA',
+        backgroundImage: 'radial-gradient(circle, rgba(30,33,64,0.055) 1.5px, transparent 1.5px)',
+        backgroundSize: '30px 30px',
+      }}
     >
       <div className="max-w-5xl mx-auto flex flex-col gap-12">
         <div className="flex flex-col gap-3 text-center">
           <span
             className="inline-block self-center text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full"
-            style={{ background: '#F1F0FA', color: '#6B6B7A' }}
+            style={{ background: '#FAF9F6', color: '#6B6B7A' }}
           >
             Real people
           </span>
@@ -61,7 +65,7 @@ export default function Testimonials() {
             <div
               key={t.name}
               className="flex flex-col gap-5 p-6 rounded-2xl"
-              style={{ background: '#F1F0FA', borderRadius: '20px' }}
+              style={{ background: '#FAF9F6', borderRadius: '20px' }}
             >
               <Stars count={t.stars} />
               <p

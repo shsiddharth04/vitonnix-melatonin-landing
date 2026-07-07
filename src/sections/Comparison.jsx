@@ -38,13 +38,17 @@ export default function Comparison() {
   return (
     <section
       className="py-20 md:py-28 px-6"
-      style={{ background: '#F1F0FA' }}
+      style={{
+        background: '#FAF9F6',
+        backgroundImage: 'radial-gradient(circle, rgba(185,179,232,0.16) 1.5px, transparent 1.5px)',
+        backgroundSize: '30px 30px',
+      }}
     >
       <div className="max-w-3xl mx-auto flex flex-col gap-10">
         <div className="flex flex-col gap-3 text-center">
           <span
             className="inline-block self-center text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full"
-            style={{ background: '#FAF9F6', color: '#6B6B7A' }}
+            style={{ background: '#F1F0FA', color: '#6B6B7A' }}
           >
             Why switch
           </span>

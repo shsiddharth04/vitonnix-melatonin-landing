@@ -9,7 +9,11 @@ export default function LabelTransparency() {
   return (
     <section
       className="py-20 md:py-28 px-6"
-      style={{ background: '#FAF9F6' }}
+      style={{
+        background: '#FAF9F6',
+        backgroundImage: 'radial-gradient(circle, rgba(185,179,232,0.16) 1.5px, transparent 1.5px)',
+        backgroundSize: '30px 30px',
+      }}
     >
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         {/* Product image */}

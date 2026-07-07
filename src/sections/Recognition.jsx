@@ -2,14 +2,18 @@ export default function Recognition() {
   return (
     <section
       className="py-20 md:py-28 px-6"
-      style={{ background: '#FAF9F6' }}
+      style={{
+        background: '#F1F0FA',
+        backgroundImage: 'radial-gradient(circle, rgba(30,33,64,0.055) 1.5px, transparent 1.5px)',
+        backgroundSize: '30px 30px',
+      }}
     >
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Copy */}
         <div className="flex flex-col gap-6">
           <span
             className="inline-block self-start text-xs font-medium tracking-widest uppercase px-3 py-1 rounded-full"
-            style={{ background: '#F1F0FA', color: '#6B6B7A' }}
+            style={{ background: '#FAF9F6', color: '#6B6B7A' }}
           >
             Why it works
           </span>
@@ -27,7 +31,7 @@ export default function Recognition() {
           </p>
           <div
             className="flex items-center gap-3 p-4 rounded-2xl"
-            style={{ background: '#F1F0FA', borderRadius: '16px' }}
+            style={{ background: '#FAF9F6', borderRadius: '20px' }}
           >
             <div
               className="w-1 self-stretch rounded-full flex-shrink-0"
