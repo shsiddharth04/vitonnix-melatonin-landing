@@ -77,7 +77,7 @@ export default function Testimonials() {
               <div className="flex items-center gap-3">
                 <div
                   className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-semibold flex-shrink-0"
-                  style={{ background: '#1E2140', color: '#FAF9F6', fontFamily: 'Inter, sans-serif' }}
+                  style={{ background: '#26155a', color: '#FAF9F6', fontFamily: 'Inter, sans-serif' }}
                 >
                   {t.initials}
                 </div>

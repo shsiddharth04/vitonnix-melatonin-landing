@@ -176,7 +176,7 @@ export default function CanvasScrubber() {
   // ── Reduced-motion fallback ──────────────────────────────────────────────
   if (reduced) {
     return (
-      <section style={{ background: '#0d0e1f', padding: '80px 24px' }}>
+      <section style={{ background: '#100828', padding: '80px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 32, alignItems: 'center' }}>
           <img
             src={getFramePath(89, false)}
@@ -197,7 +197,7 @@ export default function CanvasScrubber() {
   return (
     <section
       ref={wrapperRef}
-      style={{ position: 'relative', height: '300vh', background: '#0d0e1f' }}
+      style={{ position: 'relative', height: '300vh', background: '#100828' }}
     >
       <div style={{
         position: 'sticky', top: 0, height: '100vh', width: '100%',
@@ -208,7 +208,7 @@ export default function CanvasScrubber() {
           <div style={{
             position: 'absolute', inset: 0, zIndex: 10,
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16,
-            background: '#0d0e1f',
+            background: '#100828',
           }}>
             <div style={{
               width: 40, height: 40, borderRadius: '50%',

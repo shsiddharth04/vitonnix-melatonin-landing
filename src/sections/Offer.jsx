@@ -3,7 +3,7 @@ export default function Offer() {
     <section
       id="offer"
       className="py-20 md:py-28 px-6"
-      style={{ background: '#1E2140' }}
+      style={{ background: '#26155a' }}
     >
       <div className="max-w-2xl mx-auto flex flex-col items-center gap-8 text-center">
         <div className="flex flex-col gap-3">

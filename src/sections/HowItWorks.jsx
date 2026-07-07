@@ -24,7 +24,7 @@ function SprayIllustration() {
       <ellipse cx="120" cy="185" rx="82" ry="105" fill="rgba(185,179,232,0.11)" />
 
       {/* Bottle body */}
-      <rect x="84" y="120" width="72" height="162" rx="15" fill="#252847" />
+      <rect x="84" y="120" width="72" height="162" rx="15" fill="#26155a" />
 
       {/* Label band */}
       <rect x="84" y="178" width="72" height="62" fill="rgba(185,179,232,0.18)" />
@@ -36,16 +36,16 @@ function SprayIllustration() {
       <rect x="100" y="220" width="40" height="2.5" rx="1.25" fill="#B9B3E8" opacity="0.22" />
 
       {/* Bottle neck */}
-      <rect x="100" y="96" width="40" height="24" rx="7" fill="#252847" />
+      <rect x="100" y="96" width="40" height="24" rx="7" fill="#26155a" />
 
       {/* Cap / pump collar */}
-      <rect x="92" y="81" width="56" height="15" rx="5.5" fill="#2e3260" />
+      <rect x="92" y="81" width="56" height="15" rx="5.5" fill="#331870" />
 
       {/* Pump stem */}
-      <rect x="113" y="50" width="14" height="31" rx="4" fill="#2e3260" />
+      <rect x="113" y="50" width="14" height="31" rx="4" fill="#331870" />
 
       {/* Nozzle head */}
-      <ellipse cx="120" cy="48" r="7.5" fill="#363870" />
+      <ellipse cx="120" cy="48" r="7.5" fill="#3d1f84" />
 
       {/* Spray particles — center arc */}
       <circle cx="120" cy="31" r="4.5" fill="#B9B3E8" opacity="0.62" />
@@ -70,7 +70,7 @@ function SprayIllustration() {
 
       {/* Moon crescent — top left */}
       <circle cx="34" cy="76" r="18" fill="#E8A94C" opacity="0.72" />
-      <circle cx="44" cy="70" r="14" fill="#1E2140" />
+      <circle cx="44" cy="70" r="14" fill="#26155a" />
 
       {/* Scattered stars */}
       <circle cx="198" cy="60"  r="2.5" fill="#B9B3E8" opacity="0.62" />
@@ -84,7 +84,7 @@ function SprayIllustration() {
       <circle cx="188" cy="44" r="2.5" fill="#E8A94C" opacity="0.52" />
 
       {/* Ground shadow */}
-      <ellipse cx="120" cy="284" rx="44" ry="6" fill="#1E2140" opacity="0.08" />
+      <ellipse cx="120" cy="284" rx="44" ry="6" fill="#26155a" opacity="0.08" />
     </svg>
   )
 }
@@ -129,7 +129,7 @@ export default function HowItWorks() {
                   <div
                     className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center font-semibold text-sm"
                     style={{
-                      background: '#1E2140',
+                      background: '#26155a',
                       color: '#FAF9F6',
                       fontFamily: 'Inter, sans-serif',
                       borderRadius: '12px',
@@ -160,7 +160,7 @@ export default function HowItWorks() {
           <div
             className="hidden md:flex flex-col items-center justify-center rounded-3xl py-12 px-8"
             style={{
-              background: '#1E2140',
+              background: '#26155a',
               borderRadius: '24px',
               minHeight: '440px',
             }}

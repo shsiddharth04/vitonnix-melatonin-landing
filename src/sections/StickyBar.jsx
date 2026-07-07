@@ -18,7 +18,7 @@ export default function StickyBar() {
       className="fixed bottom-0 left-0 right-0 z-50 transition-transform duration-300"
       style={{
         transform: visible ? 'translateY(0)' : 'translateY(100%)',
-        background: '#1E2140',
+        background: '#26155a',
         borderTop: '1px solid rgba(185,179,232,0.15)',
         boxShadow: '0 -8px 32px rgba(0,0,0,0.2)',
       }}

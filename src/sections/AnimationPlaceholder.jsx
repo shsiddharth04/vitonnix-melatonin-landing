@@ -45,7 +45,7 @@ export default function AnimationPlaceholder() {
               <span
                 key={text}
                 className="text-xs px-4 py-2 rounded-full font-medium"
-                style={{ background: '#1E2140', color: '#FAF9F6', fontFamily: 'Inter, sans-serif' }}
+                style={{ background: '#26155a', color: '#FAF9F6', fontFamily: 'Inter, sans-serif' }}
               >
                 {text}
               </span>

@@ -64,7 +64,7 @@ export default function Comparison() {
           {/* Header */}
           <div
             className="grid grid-cols-3 px-6 py-4"
-            style={{ background: '#1E2140' }}
+            style={{ background: '#26155a' }}
           >
             <span className="text-sm font-medium" style={{ color: '#6B6B7A', fontFamily: 'Inter, sans-serif' }}>Feature</span>
             <span className="text-sm font-semibold text-center" style={{ color: '#E8A94C', fontFamily: 'Inter, sans-serif' }}>Vitonnix Spray</span>

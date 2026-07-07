@@ -106,29 +106,27 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden px-6 py-20 md:py-0"
       style={{
-        /* Deep base — uniform so the spotlight/vignette layers create all the depth */
-        background: '#1c1a52',
+        /* Warm deep lavender — matches the brand palette (not blue-navy) */
+        background: '#231b5a',
       }}
     >
-      {/* Layer 1: fine dot texture — subtlest near the bright center, most visible in dark corners */}
+      {/* Layer 1: fine dot texture — most visible in dark corners */}
       <div className="absolute inset-0 pointer-events-none" style={{
-        backgroundImage: 'radial-gradient(circle, rgba(185,179,232,0.22) 1px, transparent 1px)',
+        backgroundImage: 'radial-gradient(circle, rgba(200,185,240,0.20) 1px, transparent 1px)',
         backgroundSize: '22px 22px',
       }} />
 
       {/* Layer 2: star field */}
       <Stars />
 
-      {/* Layer 3: central spotlight — lifts the content area, creates the "raised" illusion */}
+      {/* Layer 3: central spotlight — periwinkle-violet matching brand label color */}
       <div className="absolute inset-0 pointer-events-none" style={{
-        background: [
-          'radial-gradient(ellipse 80% 70% at 50% 50%, rgba(72,62,168,0.95) 0%, rgba(48,42,120,0.6) 45%, transparent 72%)',
-        ].join(','),
+        background: 'radial-gradient(ellipse 80% 70% at 50% 50%, rgba(96,82,188,0.92) 0%, rgba(68,55,148,0.55) 45%, transparent 72%)',
       }} />
 
-      {/* Layer 4: corner vignette — pushes edges into shadow, making the center pop */}
+      {/* Layer 4: corner vignette — deep plum edges, center pops */}
       <div className="absolute inset-0 pointer-events-none" style={{
-        background: 'radial-gradient(ellipse 88% 82% at 50% 50%, transparent 32%, rgba(6,5,22,0.80) 100%)',
+        background: 'radial-gradient(ellipse 88% 82% at 50% 50%, transparent 32%, rgba(8,5,28,0.82) 100%)',
       }} />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
