@@ -60,12 +60,13 @@ function Callout({ anchorX, anchorY, direction = 'right', text }) {
 }
 
 function Stars() {
-  const stars = Array.from({ length: 60 }, (_, i) => ({
+  // More stars, weighted toward edges where the background is darker
+  const stars = Array.from({ length: 90 }, (_, i) => ({
     id: i,
     top: `${(i * 137.5) % 100}%`,
     left: `${(i * 97.3) % 100}%`,
-    size: (i % 3) + 1,
-    opacity: 0.12 + (i % 5) * 0.08,
+    size: (i % 4 === 0) ? 2.5 : (i % 3 === 0) ? 1.5 : 1,
+    opacity: 0.10 + (i % 6) * 0.07,
   }))
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -105,10 +106,30 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden px-6 py-20 md:py-0"
       style={{
-        background: 'linear-gradient(155deg, #1e2050 0%, #2e2c70 22%, #4a4490 45%, #7060b0 68%, #a898d4 100%)',
+        /* Deep base — uniform so the spotlight/vignette layers create all the depth */
+        background: '#1c1a52',
       }}
     >
+      {/* Layer 1: fine dot texture — subtlest near the bright center, most visible in dark corners */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        backgroundImage: 'radial-gradient(circle, rgba(185,179,232,0.22) 1px, transparent 1px)',
+        backgroundSize: '22px 22px',
+      }} />
+
+      {/* Layer 2: star field */}
       <Stars />
+
+      {/* Layer 3: central spotlight — lifts the content area, creates the "raised" illusion */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        background: [
+          'radial-gradient(ellipse 80% 70% at 50% 50%, rgba(72,62,168,0.95) 0%, rgba(48,42,120,0.6) 45%, transparent 72%)',
+        ].join(','),
+      }} />
+
+      {/* Layer 4: corner vignette — pushes edges into shadow, making the center pop */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        background: 'radial-gradient(ellipse 88% 82% at 50% 50%, transparent 32%, rgba(6,5,22,0.80) 100%)',
+      }} />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -199,10 +220,10 @@ export default function Hero() {
           {...fadeUp(0.18, reduced)}
           className="relative flex items-center justify-center py-10 md:py-16"
         >
-          {/* Dark radial spotlight — keeps white bottle readable at all viewport widths */}
+          {/* Soft dark pool behind bottle — keeps it readable without fighting the vignette */}
           <div style={{
-            position: 'absolute', inset: '-20px', pointerEvents: 'none',
-            background: 'radial-gradient(ellipse 80% 75% at 50% 50%, rgba(15,14,50,0.65) 0%, rgba(15,14,50,0.2) 60%, transparent 100%)',
+            position: 'absolute', inset: '-10px', pointerEvents: 'none',
+            background: 'radial-gradient(ellipse 70% 65% at 50% 50%, rgba(12,10,40,0.45) 0%, transparent 100%)',
           }} />
 
           {/* Thin outline frame — bottle intentionally overflows it */}
