@@ -23,7 +23,7 @@ function Callout({ anchorX, anchorY, direction = 'right', text }) {
   )
   const line = (
     <span style={{
-      display: 'inline-block', width: 42, height: 1,
+      display: 'inline-block', width: 52, height: 1,
       background: 'rgba(255,255,255,0.5)', flexShrink: 0, alignSelf: 'center',
     }} />
   )
@@ -216,7 +216,7 @@ export default function Hero() {
         {/* ── Right column: floating bottle cutout ── */}
         <motion.div
           {...fadeUp(0.18, reduced)}
-          className="relative flex items-center justify-center py-10 md:py-16"
+          className="relative flex items-center justify-center"
         >
           {/* Soft dark pool behind bottle — keeps it readable without fighting the vignette */}
           <div style={{
@@ -224,12 +224,12 @@ export default function Hero() {
             background: 'radial-gradient(ellipse 70% 65% at 50% 50%, rgba(12,10,40,0.45) 0%, transparent 100%)',
           }} />
 
-          {/* Thin outline frame — bottle intentionally overflows it */}
+          {/* Thin outline frame — bottle breaks past on all four sides */}
           <div style={{
             position: 'absolute',
-            width: '200px', height: '310px',
+            width: '230px', height: '360px',
             border: '1.5px solid rgba(185,179,232,0.3)',
-            borderRadius: '22px',
+            borderRadius: '24px',
             top: '50%', left: '50%',
             transform: 'translate(-50%, -50%)',
             pointerEvents: 'none',
@@ -238,8 +238,8 @@ export default function Hero() {
           {/* Floating bottle with callouts */}
           <motion.div
             className="relative"
-            style={{ width: 'min(360px, 80vw)', zIndex: 1 }}
-            animate={reduced ? {} : { y: [-7, 7, -7] }}
+            style={{ width: 'min(520px, 88vw)', zIndex: 1 }}
+            animate={reduced ? {} : { y: [-8, 8, -8] }}
             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
           >
             <img
